@@ -1,12 +1,29 @@
 ---
 layout: default
 ---
+# Have Fun
 
-# This is Paul’s Blog
-Welcome, and have fun.
+I believe that the talk represents one's knowledge and thoughts. Talk is not cheap, but as important as a programmer's codes.
+```
+Laziness,  Impatience and Hubris.
+Attentive, Sufferance and Modesty.
+These are all great virtues of a programmer.
+```
 
 #### [Nov 7, 2018](./2018-11-07.html)
+
+<br>
+TODO: <br>
+0. About JY901 IMU and its sibling WT901BLE;<br>
+1. About Arduino;<br>
+2. Not figured out yet.
 
 ### For More
 
 Please have a look at my [Main Page](https://github.com/tic-toc-developer/).
+
+
+>We hold these truths to be self-evident: 
+that <b>all men are created equal</b>; 
+that they are endowed by their Creator with certain unalienable rights; that among these are <b>life, liberty, and the pursuit of happiness.</b> 
+
