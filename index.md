@@ -12,14 +12,14 @@ These are all great virtues of a programmer.
 
 #### [Nov 7, 2018](./2018-11-07.html)
 #### [Nov 8, 2018](./2018-11-08.html)
-
+#### [Nov 9, 2018](./2018-11-09.html)
 
 <br>
 DOING: Writing about JY901 IMU.<br>
 TODO: <br>
 0. About WT901BLE;<br>
-1. About Arduino;<br>
-2. Not figured out yet.
+1. About Arduino MKR1000/WiFi1010;<br>
+2. Machine Learning.
 
 ### For More
 
