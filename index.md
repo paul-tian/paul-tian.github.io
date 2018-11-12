@@ -21,10 +21,12 @@ These are all great virtues of a programmer.
 
 #### [Nov 11, 2018](./2018-11-11.html)
 
+#### [Nov 12, 2018](./2018-11-12.html)
+
 DOING:
 
 1. Coding for JY901 IMU (half done);
-2. Learning about Machine Learning.
+2. Learning about *Machine Learning*.
 
 TODO:
 
