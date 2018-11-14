@@ -25,6 +25,8 @@ These are all great virtues of a programmer.
 
 #### [Nov 13, 2018](./2018-11-13.html)
 
+#### [Nov 14, 2018](./2018-11-14.html)
+
 DOING:
 
 1. Coding for JY901 IMU (half done);
