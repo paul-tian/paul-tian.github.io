@@ -214,4 +214,12 @@ Finally, Configure ```test.jsp``` in ```webapps/test/``` as follows:
 
 After all the steps finished, start the Tomcat server and open a browser at <http://localhost:8080/test/test.jsp>, there should display the data from the user table.
 
+## Summary
+
+All these steps may seems easy to follow, but they did cost time to deal with unexpected errors and problems, which need patience to search for solutions and answers. After all, Tomcat 9 and MySQL 8 are too new(both become stable this year) so the existing method may not compatible.
+
+### P.S.
+
+This work reminds me about my graduation project, which also cost me lots of efforts to finish, these works and memories are all the treasures of my life, but that's another story.
+
 [homepage](/)
