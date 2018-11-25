@@ -66,6 +66,71 @@ However, you need to add user to use the manager page, for more please visit [he
 
 ## Step 2: Install MySQL 8
 
+### 2.1 Install MySQL
+
+install MySQL is much easier, just go to the MySQL community version download [page](https://dev.mysql.com/downloads/mysql/) and download the install file (don't forget to verify its integirty).
+You may also need to add
+
+```bash
+export PATH=$PATH:/usr/local/mysql/bin
+```
+
+in ```.bash_profile``` to use MySQL in terminal, or to use it by GUI clients like [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) or [TablePlus](https://tableplus.io) (Free version could 
+open two tabs simultaneously).
+
+### 2.2 Run and Test
+
+The installation step should lead you to setup the database root user password, but you can still initialize you database in ```Mac->System Preferences->MySQL```, where you can also stop or start the database service and do configuration as you wish.
+
+Open terminal and use
+
+```bash
+mysql -u root -p
+```
+then input password of root user, then you should enter the MySQL CLI, try create new database and table by using command
+
+```mysql
+mysql> create database demo;
+mysql> use demo;
+mysql> create table user (
+    ->   id serial,
+    ->   name VARCHAR(20),
+    ->   password varchar(20),
+    ->   PRIMARY KEY (id)
+    ->   );
+```
+
+and add some user in it:
+
+```mysql
+mysql> insert into user
+    -> (id, name, password)
+    -> values
+    -> ('1', 'alice', 'alice123')
+    -> ;
+mysql> insert into user (id, name, password) values ('2', 'bob', 'bob456');
+```
+
+check if add them successfully:
+
+```mysql
+mysql> select * from user;
+```
+
+and the output should be
+
+```mysql
++----+-------+----------+
+| id | name  | password |
++----+-------+----------+
+|  1 | alice | alice123 |
+|  2 | bob   | bob456   |
++----+-------+----------+
+2 rows in set (0.01 sec)
+```
+
+Then the MySQL 8 is ready to go.
+
 ## Step 3: Link Them
 
 [homepage](/)
