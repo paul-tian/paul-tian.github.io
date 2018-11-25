@@ -6,7 +6,8 @@ layout: default
   
 ## Step 1: Install Tomcat 9
 
-this step is inspired by this [post](https://wolfpaulus.com/mac/tomcat/).
+This step is inspired by this [post](https://wolfpaulus.com/mac/tomcat/).
+
 ### 1.1 Install JDK
 
 #### 1.1.1
@@ -87,6 +88,7 @@ Open terminal and use
 ```bash
 mysql -u root -p
 ```
+
 then input password of root user, then you should enter the MySQL CLI, try create new database and table by using command
 
 ```mysql
@@ -132,5 +134,84 @@ and the output should be
 Then the MySQL 8 is ready to go.
 
 ## Step 3: Link Them
+
+### 3.1 Connector/J
+
+To connect Tomcat to MySQL, a MySQL [Connector/J](https://dev.mysql.com/downloads/connector/j/) is needed.
+Download the platform Independent one and unzip it, put the ```mysql-connector-java-8.X.X.jar``` in ```/PATH/TO/TOMCAT/lib```, and we have the connector settled.
+
+### 3.2 Test Page
+
+This step is inspired by [Tomcat official guide](https://tomcat.apache.org/tomcat-9.0-doc/jndi-datasource-examples-howto.html#MySQL_DBCP_2_Example).  
+The [MySQL official guide](https://dev.mysql.com/doc/connector-j/8.0/en/connector-j-usagenotes-tomcat.html) to connect maybe out of date, it's not recommended to follow.
+
+#### 3.2.1
+
+First, mkdir ```/PATH/TO/TOMCAT/webapps/test/WEB-INF/lib``` and ```/PATH/TO/TOMCAT/webapps/test/META-INF``` for file placement.
+
+Configure ```context.xml``` in ```META-INF``` as follows:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <Resource name="jdbc/demo" type="javax.sql.DataSource" maxActive="100" maxIdle="30" maxWait="10000" url="jdbc:mysql://localhost:3306/demo" driverClassName="com.mysql.jdbc.Driver" username="user_name" password="user_password" />
+</Context>
+```
+
+#### 3.2.2
+
+Then, configure ```web.xml``` in ```WEB-INF``` as follows:
+
+```xml
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+    <description>MySQL Test App</description>
+    <resource-ref>
+        <description>DB Connection</description>
+        <res-ref-name>jdbc/demo</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+    </resource-ref>
+</web-app>
+```
+
+Noticed that here the label ```<web-app>``` ends with ```version="2.4"```, which means we need to install the [JSTL](https://www.oracle.com/technetwork/java/index-jsp-135995.html) and the version should be 1.1.X(not 1.2.X, for Servlet version 2.5 uses JSTL 1.2 and Servlet version 2.4 uses JSTL 1.1), you can get it from [Apache Tomcat Taglibs - Standard Tag Library](https://tomcat.apache.org/taglibs/standard/) or directly download from [here](http://archive.apache.org/dist/jakarta/taglibs/standard/binaries/)(so there's no need to redirect from the [Apache Tomcat Taglibs - Standard Tag Library](https://tomcat.apache.org/taglibs/standard/)).  
+Once you have JSTL, copy ```jstl.jar``` and ```standard.jar``` to webapp's ```WEB-INF/lib``` directory.
+
+#### 3.2.3
+
+Finally, Configure ```test.jsp``` in ```webapps/test/``` as follows:
+
+```jsp
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<sql:query var="data" dataSource="jdbc/demo">
+    select name, password from user
+    <!-- here the user table is the one created in Step 2.2 -->
+</sql:query>
+
+<html>
+
+<head>
+    <title>Database Test</title>
+</head>
+
+<body>
+
+    <h2>Results</h2>
+
+    <c:forEach var="row" items="${data.rows}">
+        name: ${row.name}<br />
+        password: ${row.password}<br />
+    </c:forEach>
+
+</body>
+
+</html>
+```
+
+#### 3.2.4
+
+After all the steps finished, start the Tomcat server and open a browser at <http://localhost:8080/test/test.jsp>, there should display the data from the user table.
 
 [homepage](/)
