@@ -1,5 +1,8 @@
 title: Talk is NOT Cheap
 description: A place for Paul's blog.
+url: https://tic-toc-developer.github.io
 show_downloads: false
 google_analytics: UA-129736043-1
 theme: jekyll-theme-merlot
+plugins:
+  - jekyll-feed
