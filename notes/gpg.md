@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# How to enable the gpg signature on git
+# Enable the GPG Signature on Git
 
 After key generation following [Official Guidance](https://help.github.com/articles/managing-commit-signature-verification/), use terminal to operate as below:
 

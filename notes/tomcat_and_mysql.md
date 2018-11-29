@@ -54,8 +54,8 @@ The Tomcat should now been set properly and you can run ```/PATH/TO/TOMCAT/bin/s
 
 #### 1.2.5
 
-Tomcat can be access at http://127.0.0.1:8080 or http://localhost:8080 by default. 
-However, you need to add user to use the manager page, for more please visit [here](https://tomcat.apache.org/tomcat-9.0-doc/manager-howto.html). My option is to uncomment the user declairation in ```/TOMCAT/ROOT/conf/tomcat-users.xml``` and modify it as below:
+Tomcat can be access at http://127.0.0.1:8080 or http://localhost:8080 by default. However, you need to add user to use the manager page, for more please visit [here](https://tomcat.apache.org/tomcat-9.0-doc/manager-howto.html).  
+My option is to uncomment the user declairation in ```/TOMCAT/ROOT/conf/tomcat-users.xml``` and modify it as below:
 
 ```xml
 <role rolename="manager-gui"/>
