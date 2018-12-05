@@ -81,13 +81,19 @@ void setup() {
     ;  // wait for serial port to connect. Needed for native USB port only
   }
 
-  // check for the WiFi module:
-  if (WiFi.status() == WL_NO_MODULE) {
-    Serial.println("Communication with WiFi module failed!");
+  // check for the WiFi hardware:
+  if (WiFi.status() == WL_NO_MODULE) { // for MKR WiFi 1010
+    Serial.println("WiFi hardware problem!");
     // don't continue
     while (true)
       ;
   }
+
+  // if (WiFi.status() == WL_NO_SHIELD) { // for MKR1000
+  //   Serial.println("WiFi hardware problem!");
+  //   while (true)
+  //     ;
+  // }
 
   // attempt to connect to Wifi network:
   while (status != WL_CONNECTED) {
@@ -101,7 +107,7 @@ void setup() {
     delay(3000);
   }
   // you're connected now, so print out the status:
-  printWifiStatus();
+  printWiFiStatus();
 }
 
 void loop() {
@@ -170,7 +176,7 @@ void httpRequest() {
   }
 }
 
-void printWifiStatus() {
+void printWiFiStatus() {
   // print the SSID of the network you're attached to:
   Serial.print("SSID: ");
   Serial.println(WiFi.SSID());
