@@ -28,22 +28,23 @@ These are all great virtues of a programmer.
 |   |   |   |   |   |   | 01|
 | 02| 03| 04|[05](/2018/12/05)| 06| 07| 08|
 |[09](/2018/12/09)| 10| 11| 12| 13| 14| 15|
-| 16| 17| 18| 19| 20| 21| 22|
+| 16| 17| 18| 19| 20|[21](/2018/12/21)| 22|
 | 23| 24| 25| 26| 27| 28| 29|
 | 30| 31|   |   |   |   |   |
 
-### DOING:
+### DOING
 
-1. Debugging Arduino / MySQL bundle;
+1. Data gathering;
 2. Learning about *Machine Learning*.
 
-### DONE:
+### DONE
 
-1. Arduino basic;
-2. JSP and MySQL basic;
-3. JY901 IMU codes.
+1. Arduino / MySQL / JSP bundle deployed;
+2. Arduino basic;
+3. JSP and MySQL basic;
+4. JY901 IMU codes.
 
-### TODO:
+### TODO
 
 1. About WT901BLE;
 2. About Arduino MKR1000/WiFi1010.
@@ -54,6 +55,7 @@ These are all great virtues of a programmer.
 2. [About Tomcat & MySQL](/notes/tomcat_and_mysql)
 3. [About Browser HTTP Message](/notes/browser_get_and_post)
 4. [About Arduino HTTP Message](/notes/arduino_get_and_post)
+5. [About Data Gathering and HTTP Connection](/notes/data_gather_and_store)
 
 ## For More
 
