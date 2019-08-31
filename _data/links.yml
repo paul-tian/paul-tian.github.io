@@ -1,0 +1,22 @@
+- name: Paul
+  url: https://tic-toc-developer.github.io
+  src: blog
+
+- name: He Chao
+  url: https://kefirlily.cn/
+  src: blog
+
+  
+- name: V2EX
+  url: https://www.v2ex.com
+  src: www
+
+
+- name: Linus Torvalds
+  url: https://www.github.com/torvalds
+  src: respect
+
+- name: Steve Jobs
+  url: https://www.apple.com/stevejobs/
+  src: respect
+

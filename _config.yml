@@ -1,8 +1,113 @@
-title: Talk is NOT Cheap
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+title: Talk is NOT cheap
 description: A place for Paul's blog.
 url: https://tic-toc-developer.github.io
+encoding: "utf-8"
+side_bar_repo_limit: 5
+date_format: "ordinal"
 show_downloads: false
-google_analytics: UA-129736043-1
-theme: jekyll-theme-merlot
-plugins:
-  - jekyll-feed
+repository: tic-toc-developer/tic-toc-developer.github.io
+
+
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: Paul Tian
+organization: 
+organization_url: 
+github_username: tic-toc-developer
+location: China, PR
+email: 
+
+
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /
+    label: Main Page
+
+  -
+    href: /categories/
+    label: Categories
+
+  -
+    href: /archives/
+    label: Archives
+
+  -
+    href: /wiki/
+    label: Wiki
+
+  -
+    href: /links/
+    label: Links
+
+  -
+    href: /about/
+    label: About
+
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+# subscribe_rss: /feed.xml
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: rouge
+paginate: 10
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
+plgins:
+    - jekyll-github-metadata
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
+
+
+# ---------------- #
+#      Comments    #
+# ---------------- #
+comments_provider: gitalk
+# https://github.com/gitalk/gitalk#install
+gitalk:
+    owner: tic-toc-developer
+    repo: blog-comments
+    clientID: d051b18c4e044f7c4b59
+    clientSecret: 7b10cc3b8707e2dad4d8e27072321745654ce947
+    owner: tic-toc-developer
+    admin: tic-toc-developer
+
+
+# ---------------- #
+#      Search      #
+# ---------------- #
+simple_jekyll_search:
+    # enable fulltext search
+    fulltext: false
+    # max searching results
+    limit: 10
+
+# ---------------- #
+#    Analytics     #
+# ---------------- #
+google:
+  analytics_id: UA-129736043-1
