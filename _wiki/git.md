@@ -2,9 +2,10 @@
 layout: wiki
 title: Git
 categories: Git
-description: Git 常用操作记录。
-keywords: Git, 版本控制
+description: Git Control
+keywords: Git, Version Control
 ---
+
 Copied from <https://github.com/mzlogin/mzlogin.github.io/blob/master/_wiki/git.md>
 
 ## 常用命令
