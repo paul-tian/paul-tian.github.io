@@ -86,15 +86,7 @@ collections:
 # ---------------- #
 #      Comments    #
 # ---------------- #
-comments_provider: gitalk
-# https://github.com/gitalk/gitalk#install
-gitalk:
-    owner: tic-toc-developer
-    repo: blog-comments
-    clientID: d051b18c4e044f7c4b59
-    clientSecret: 7b10cc3b8707e2dad4d8e27072321745654ce947
-    owner: tic-toc-developer
-    admin: tic-toc-developer
+# temporarily removed
 
 
 # ---------------- #
