@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Different SSH Keys for Git
-categories: Version Control
+categories: Git
 description: 
 keywords: git
 ---
