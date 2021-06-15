@@ -1,11 +1,10 @@
-- name: Paul
-  url: https://tic-toc-developer.github.io
-  src: blog
-
 - name: He Chao
   url: https://kefirlily.cn/
   src: blog
 
+- name: OneV's Den
+  url: https://onevcat.com/
+  src: blog
   
 - name: V2EX
   url: https://www.v2ex.com
