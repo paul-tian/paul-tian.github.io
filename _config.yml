@@ -3,12 +3,12 @@
 # ---------------- #
 title: Talk is NOT cheap
 description: A place for Paul's blog.
-url: https://tic-toc-developer.github.io
+url: https://paul-tian.github.io
 encoding: "utf-8"
 side_bar_repo_limit: 5
 date_format: "ordinal"
 show_downloads: false
-repository: tic-toc-developer/tic-toc-developer.github.io
+repository: paul-tian/paul-tian.github.io
 
 
 # ---------------- #
@@ -17,8 +17,8 @@ repository: tic-toc-developer/tic-toc-developer.github.io
 author: Paul Tian
 organization: 
 organization_url: 
-github_username: tic-toc-developer
-location: China, PR
+github_username: paul-tian
+location: China
 email: 
 
 
