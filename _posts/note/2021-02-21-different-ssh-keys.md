@@ -17,8 +17,6 @@ Clone your repo using the appropriate host.
 
 Example:
 
-```~/.ssh/config```
-
 ```
 Host work
  HostName bitbucket.org
@@ -31,14 +29,18 @@ Host personal
  User git
 ```
 
-Then instead cloning your repos like:
+Then instead of cloning repos like:
+
 ```
 git clone git@bitbucket.org:username/my-work-project.git
 git clone git@bitbucket.org:username/my-personal-project.git
 ```
-you must do
+
+The host name should be used for cloning:
+
 ```
 git clone git@work:username/my-work-project.git
 git clone git@personal:username/my-personal-project.git
 ```
+
 [homepage](/)
