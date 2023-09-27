@@ -21,7 +21,7 @@ especially the ```Note``` part, which contains some explanations for ```venv```.
 
 Start from Python 3.6, the build in ```venv``` has replaced ```pyvenv```.
 
-Run commond:
+Run command:
 ```bash
 python3 -m venv /path/to/new/virtual/environment
 ```
