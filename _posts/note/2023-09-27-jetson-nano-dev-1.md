@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Jetson Development Note1 
+title: Jetson Development Note, Part 1
 categories: Research
 description: 
 keywords: python, hardware
 ---
 
+As I am now working on Jetson hardware for my research, I would like to keep some notes for future usage.
 
 # Jetson Related Resources
 
