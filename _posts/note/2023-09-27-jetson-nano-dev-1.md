@@ -10,9 +10,13 @@ As I am now working on Jetson hardware for my research, I would like to keep som
 
 # Jetson Related Resources
 
+[Jetson guide](https://developer.nvidia.com/embedded/learn/getting-started-jetson)
+
 [Jetson nano guide](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit) 
 
 [Orin nano guide](https://developer.nvidia.com/embedded/learn/get-started-jetson-orin-nano-devkit) 
+
+[Official Doc](https://docs.nvidia.com/jetson/archives/r34.1/DeveloperGuide/index.html)
 
 [Official FAQ](https://developer.nvidia.com/embedded/faq) 
 
