@@ -1,9 +1,15 @@
 ---
 layout: post
 title: Arduino Sending Request
-categories: Network
-description: 
+categories: [Network]
+description:
 keywords: html, network
+mermaid: false
+sequence: false
+flow: false
+mathjax: false
+mindmap: false
+mindmap2: false
 ---
 
 

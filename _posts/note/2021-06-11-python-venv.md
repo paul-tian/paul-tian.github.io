@@ -1,10 +1,19 @@
 ---
 layout: post
 title: Python Virtual Environment
-categories: Python
-description: 
+categories: [Python]
+description:
 keywords: python, virtual environment
+mermaid: false
+sequence: false
+flow: false
+mathjax: false
+mindmap: false
+mindmap2: false
+topmost: true
 ---
+
+
 
 
 # Virtual Environments for Python

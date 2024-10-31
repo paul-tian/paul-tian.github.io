@@ -2,12 +2,12 @@
 layout: default
 title: Open Source Projects
 keywords: open-source,GitHub
-description: 
+description: Open and Change
 permalink: /open-source/
 ---
 
-{% if site.github.public_repositories != null %}
-{% assign sorted_repos = site.github.public_repositories | sort: "stargazers_count" | reverse %}
+{% if site.github.public_repositories != false %}
+{% assign sorted_repos = site.github.public_repositories | sort: 'stargazers_count' | reverse %}
 
 <section class="container">
     <header class="text-center">

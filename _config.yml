@@ -1,15 +1,61 @@
 # ---------------- #
 #   Main Configs   #
 # ---------------- #
-title: Talk is NOT cheap
-description: A place for Paul's blog.
-url: https://paul-tian.github.io
-encoding: "utf-8"
-side_bar_repo_limit: 5
+baseurl:
+url: https://paultian.com
 date_format: "ordinal"
-show_downloads: false
+title: "Talk is not cheap"
+subtitle: "Show you the thoughts"
+description: "My personal blog for studying"
+keywords: research, ubuntu, network
+timezone: Australia/Sydney
+encoding: "utf-8"
+
+currentyear: 2024
+
 repository: paul-tian/paul-tian.github.io
 
+# cdn for css and js
+cdn:
+    jsdelivr:
+        enabled: false
+
+# optional components config
+components:
+    # weibo,qq,wechat,douban,qzone,linkedin,facebook,twitter
+    share:
+        enabled: false
+        hide-platforms: qq,facebook
+
+    # My Popular Repositories
+    side_bar_repo:
+        enabled: true
+        limit: 5
+
+    # word count
+    word_count:
+        enabled: false
+
+    # the qrcode for right upper corner and "About" page 
+    # the path for the qrcode is: assets/images/qrcode.jpg
+    qrcode:
+        enabled: false
+
+    # wiki page view, choose from 'list' and 'cate'
+    wiki:
+        view: cate
+
+    # rolling pictures
+    fancybox:
+        enabled: false
+
+# page compression
+compress_html:
+  clippings: all
+  comments: ["<!--", "-->"]
+
+# high-light theme, supporting list: https://github.com/mzlogin/rouge-themes
+highlight_theme: github
 
 # ---------------- #
 #      Author      #
@@ -18,9 +64,8 @@ author: Paul Tian
 organization: 
 organization_url: 
 github_username: paul-tian
-location: China
+location: Sydney, Australia
 email: 
-
 
 # ---------------- #
 #    Navigation    #
@@ -37,24 +82,45 @@ navs:
   -
     href: /archives/
     label: Archives
+    mobile-hidden: true
+
+  # -
+  #   href: /wiki/
+  #   label: Wiki
+
+  # -
+  #   href: /links/
+  #   label: Links
+  #   mobile-hidden: true
 
   -
-    href: /wiki/
-    label: Wiki
-
-  -
-    href: /links/
-    label: Links
+    href: /donate/
+    label: Donate
 
   -
     href: /about/
     label: About
 
-
 # ---------------- #
 #       RSS        #
 # ---------------- #
-# subscribe_rss: /feed.xml
+subscribe_rss: /feed
+
+# ---------------- #
+#      INDEX       #
+# ---------------- #
+index:
+    banner:
+        # main page banner text color 
+        color: "#fff"
+        # main page nav bar text color 
+        nav-color: "rgba(255, 255, 255, .5)"
+        # main page banner background color 
+        background-color: "#4183c4"
+        # main page banner background image
+        # background-image: "/assets/images/octicons-bg.png"
+        # background-repeat: "no-repeat"
+        # background-size: "cover"
 
 # ---------------- #
 #      Jekyll      #
@@ -68,7 +134,7 @@ lsi: false
 quiet: false
 excerpt_separator: "\n\n"
 permalink: /:year/:month/:day/:title/
-plgins:
+plugins:
     - jekyll-github-metadata
     - rouge
 #     - jekyll-html-pipeline
@@ -82,24 +148,62 @@ collections:
         output: true
         permalink: /wiki/:path/
 
+# # ---------------- #
+# #      Comments    #
+# # ---------------- #
+# # support provider: disqus, gitment, gitalk, utterances, beaudar, giscus
+# comments_provider: giscus
+# # !!!重要!!! 请修改下面这些信息为你自己申请的
+# # !!!Important!!! Please modify infos below to yours
+# # disqus 配置参考：https://disqus.com
+# disqus:
+#     username: 
+# # gitment 配置参考：https://imsun.net/posts/gitment-introduction/
+# gitment:
+#     owner: mzlogin
+#     repo: blog-comments
+#     oauth:
+#         client_id: d2e1cbbd298958076462
+#         client_secret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
+# # gitalk 配置参考：https://github.com/gitalk/gitalk#install
+# gitalk:
+#     owner: mzlogin
+#     repo: blog-comments
+#     clientID: d2e1cbbd298958076462
+#     clientSecret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
+# # utterances 配置参考：https://utteranc.es/
+# utterances:
+#     repo: mzlogin/blog-comments
+# # beaudar 配置参考：https://beaudar.lipk.org/
+# beaudar:
+#     repo: mzlogin/blog-comments
+# # giscus 配置参考：https://giscus.app/zh-CN
+# giscus:
+#     repo: mzlogin/blog-comments
+#     repo-id: MDEwOlJlcG9zaXRvcnk5MzEyNzkxNw==
+#     category: Announcements
+#     category-id: DIC_kwDOBY0E7c4CRtg9
+# # 在使用其它评论组件时可点击显示 Disqus
+# lazy_load_disqus : false
+
+# # ---------------- #
+# #      Search      #
+# # ---------------- #
+# simple_jekyll_search:
+#     # enable fulltext search
+#     fulltext: false
+#     # max searching results
+#     limit: 10
 
 # ---------------- #
-#      Comments    #
-# ---------------- #
-# temporarily removed
-
-
-# ---------------- #
-#      Search      #
-# ---------------- #
-simple_jekyll_search:
-    # enable fulltext search
-    fulltext: false
-    # max searching results
-    limit: 10
-
-# ---------------- #
-#    Analytics     #
+#      Google      #
 # ---------------- #
 google:
-  analytics_id: UA-129736043-1
+    analytics_id: # G-20FLEG5Q2W
+    adsense:
+        enabled: false
+        footer: false
+        sidebar: false
+        sidebar-detail: false
+        content_header: false
+        content_footer: false

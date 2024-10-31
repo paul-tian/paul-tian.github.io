@@ -1,9 +1,15 @@
 ---
 layout: post
 title: About Tomcat and MySQL
-categories: MySQL
-description: Combining them.
+categories: [MySQL]
+description:
 keywords: Tomcat, MySQL
+mermaid: false
+sequence: false
+flow: false
+mathjax: false
+mindmap: false
+mindmap2: false
 ---
 
 # Configuring Tomcat 9 / MySQL 8 on macOS Mojave 10.14.1

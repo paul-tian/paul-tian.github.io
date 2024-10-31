@@ -1,8 +1,9 @@
 - name: Software Engineer Keywords
   keywords:
       - ASM
-      - C++
+      - C/C++
       - Python
+      - Java
 
 - name: Mobile Developer Keywords
   keywords:

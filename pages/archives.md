@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Archives
-description: Archived by years
-keywords: Archives
+description: Archived by year
+keywords: archives
 comments: false
 menu: Archives
 permalink: /archives/

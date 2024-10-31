@@ -1,11 +1,16 @@
 ---
 layout: post
 title: Downgrade Ubuntu Kernel
-categories: System
-description: 
+categories: [System]
+description:
 keywords: ubuntu, linux, nvidia
+mermaid: false
+sequence: false
+flow: false
+mathjax: false
+mindmap: false
+mindmap2: false
 ---
-
 
 # Accidentally Updated System Kernel
 

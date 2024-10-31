@@ -1,9 +1,15 @@
 ---
 layout: post
 title: About Ubuntu 18.04 Gnome Desktop Remote
-categories: System
-description: 
+categories: [System]
+description:
 keywords: Ubuntu, Gnome Desktop
+mermaid: false
+sequence: false
+flow: false
+mathjax: false
+mindmap: false
+mindmap2: false
 ---
 
 # Enable RDP Service

@@ -1,0 +1,10 @@
+{% if page.copyright != false %}
+<div style="margin-top:2em;padding:0 1.5em;border:1px solid #d3d3d3;background-color:#deebf7">
+  <h3>Document Info</h3>
+  <ul>
+    <li>Author: <a href="{{ site.url }}" target="_blank">{{ site.author }}</a></li>
+    <li>Link:   <a href="{{ site.url }}{{ page.url }}" target="_blank">{{ site.url }}{{ page.url }}</a></li>
+    <li>Copyright: Attribution-NonCommercial-NoDerivatives (<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed" target="_blank">CC 4.0</a>) </li>
+  </ul>
+</div>
+{% endif %}

@@ -1,10 +1,17 @@
 ---
 layout: post
 title: Jetson Development Note, Part 1
-categories: Research
+categories: [Research]
 description: 
 keywords: python, hardware
+mermaid: false
+sequence: false
+flow: false
+mathjax: false
+mindmap: false
+mindmap2: false
 ---
+
 
 As I am now working on Jetson hardware for my research, I would like to keep some notes for future usage.
 

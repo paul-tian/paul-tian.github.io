@@ -1,9 +1,15 @@
 ---
 layout: post
 title: Different SSH Keys for Git
-categories: Git
-description: 
+categories: [Git]
+description:
 keywords: git
+mermaid: false
+sequence: false
+flow: false
+mathjax: false
+mindmap: false
+mindmap2: false
 ---
 
 The solution is original from https://superuser.com/a/1519694 , I copied it here for convenience.

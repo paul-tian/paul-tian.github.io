@@ -1,10 +1,19 @@
 ---
 layout: post
 title: Jetson Development Note, Part 2
-categories: Research
+categories: [Research]
 description: 
 keywords: python, hardware
+mermaid: false
+sequence: false
+flow: false
+mathjax: false
+mindmap: false
+mindmap2: false
 ---
+
+Content here
+
 
 # Hello World Project (continue)
 

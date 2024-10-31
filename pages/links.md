@@ -8,29 +8,35 @@ menu: Links
 permalink: /links/
 ---
 
+
 > Here are some blogs by other coders.
 
+<ul>
 {% for link in site.data.links %}
   {% if link.src == 'blog' %}
-* [{{ link.name }}]({{ link.url }})
+  <li><a href="{{ link.url }}" target="_blank">{{ link.name}}</a></li>
   {% endif %}
 {% endfor %}
-<br>
+</ul>
+
 
 > Friendly Links
-> 
+
+<ul>
 {% for link in site.data.links %}
   {% if link.src == 'www' %}
-* [{{ link.name }}]({{ link.url }})
+  <li><a href="{{ link.url }}" target="_blank">{{ link.name}}</a></li>
   {% endif %}
 {% endfor %}
-<br>
+</ul>
+
 
 > Those who I respect
 
+<ul>
 {% for link in site.data.links %}
   {% if link.src == 'respect' %}
-* [{{ link.name }}]({{ link.url }})
+  <li><a href="{{ link.url }}" target="_blank">{{ link.name}}</a></li>
   {% endif %}
 {% endfor %}
-<br>
+</ul>
