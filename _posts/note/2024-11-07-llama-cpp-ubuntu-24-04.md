@@ -17,7 +17,7 @@ mindmap2: false
 
 As of writing this note, I'm using llama.cpp version b4020.
 
-In my previous [post](2024/11/01/llama-cpp-ubuntu-22-04/) I implemented LLaMA.cpp on Ubuntu 22.04 with CUDA 11, 
+In my previous [post](/2024/11/01/llama-cpp-ubuntu-22-04/) I implemented LLaMA.cpp on Ubuntu 22.04 with CUDA 11, 
 but the system compiler is really annoying, saying I need to adjust the link of ```gcc``` and ```g++``` frequently for different purposes.
 
 
