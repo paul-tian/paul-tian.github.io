@@ -22,7 +22,7 @@ cdn:
 
 # optional components config
 components:
-    # weibo,qq,wechat,douban,qzone,linkedin,facebook,twitter
+    # support: weibo,qq,wechat,douban,qzone,linkedin,facebook,twitter
     share:
         enabled: false
         hide-platforms: qq,facebook
@@ -203,7 +203,7 @@ google:
     adsense:
         enabled: true
         footer: true
-        sidebar: false
+        sidebar: true
         sidebar-detail: false
         content_header: false
-        content_footer: false
+        content_footer: true
