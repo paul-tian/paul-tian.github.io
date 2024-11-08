@@ -199,10 +199,10 @@ collections:
 #      Google      #
 # ---------------- #
 google:
-    analytics_id: # G-20FLEG5Q2W
+    analytics_id: G-L48P9VQC1Z
     adsense:
-        enabled: false
-        footer: false
+        enabled: true
+        footer: true
         sidebar: false
         sidebar-detail: false
         content_header: false
