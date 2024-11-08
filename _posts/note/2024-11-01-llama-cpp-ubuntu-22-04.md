@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Compile LLaMA.cpp on Ubuntu with CUDA Support
+title: Compile LLaMA.cpp on Ubuntu 22.04 with CUDA 11.8 Support
 categories: [Research]
 description: 
 keywords: llama, ubuntu
@@ -13,7 +13,7 @@ mindmap2: false
 ---
 
 
-# Compile LLaMA.cpp on Ubuntu with CUDA Support
+# Compile LLaMA.cpp on Ubuntu 22.04 with CUDA 11.8 Support
 
 As of writing this note, the latest llama.cpp version is b3995.
 
