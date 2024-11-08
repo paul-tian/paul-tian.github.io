@@ -205,5 +205,5 @@ google:
         footer: true
         sidebar: true
         sidebar-detail: false
-        content_header: false
+        content_header: true
         content_footer: true
