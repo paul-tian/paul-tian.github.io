@@ -49,4 +49,26 @@ git clone git@work:username/my-work-project.git
 git clone git@personal:username/my-personal-project.git
 ```
 
+
+if the repository is already cloned (a public one) but would like to change to ssh key for commit, 
+
+```bash
+git remote set-url origin git@work:username/my-work-project.git
+```
+
+```bash
+git config user.name "Mona Lisa"
+git config user.email "MonaLisa@example.com"
+```
+
+
+```bash
+git config --global core.editor "vim"
+```
+or 
+
+```bash
+export GIT_EDITOR=vim
+```
+
 [homepage](/)
