@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://paultian.com
+url: https://paul-tian.github.io
 date_format: "ordinal"
 title: "Talk is not cheap"
 subtitle: "Show you the thoughts"
@@ -11,7 +11,7 @@ keywords: research, ubuntu, network
 timezone: Australia/Sydney
 encoding: "utf-8"
 
-currentyear: 2024
+currentyear: 2026
 
 repository: paul-tian/paul-tian.github.io
 
